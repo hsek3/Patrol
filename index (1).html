@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HSE COMMAND CENTER</title>
+<meta name="description" content="Safety, Health & Operational Control System">
+<meta name="theme-color" content="#0B1F3A">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="HSE Command">
+<meta property="og:title" content="HSE COMMAND CENTER">
+<meta property="og:description" content="Safety, Health & Operational Control System">
+<meta property="og:image" content="icon-512.png">
+<style>
+  :root{--bg:#050A18;--panel:rgba(16,28,52,.72);--border:rgba(120,160,230,.22);--text:#E8EEFB;--muted:#8DA0C4;--a:#22D3EE;--b:#3B82F6}
+  *{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--text);background:radial-gradient(1100px 600px at 15% -10%,#12315c 0,transparent 60%),radial-gradient(900px 500px at 100% 110%,#0b2a4d 0,transparent 55%),var(--bg);display:flex;align-items:center;justify-content:center;padding:24px 16px;padding-bottom:max(24px,env(safe-area-inset-bottom))}
+  .grid{position:fixed;inset:0;background-image:linear-gradient(rgba(120,160,230,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(120,160,230,.05) 1px,transparent 1px);background-size:44px 44px;mask-image:radial-gradient(circle at 50% 40%,#000,transparent 70%);pointer-events:none}
+  .card{position:relative;width:100%;max-width:440px;text-align:center;padding:36px 28px 28px;border:1px solid var(--border);border-radius:24px;background:var(--panel);backdrop-filter:blur(14px);box-shadow:0 24px 80px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.05)}
+  .logo{width:92px;height:92px;margin:0 auto 18px;filter:drop-shadow(0 8px 28px rgba(34,211,238,.35));animation:float 4s ease-in-out infinite}
+  @keyframes float{50%{transform:translateY(-5px)}}
+  h1{margin:0;font-size:25px;letter-spacing:3px;font-weight:800;background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{margin:8px 0 26px;color:var(--muted);font-size:14px;line-height:1.5}
+  .btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px 18px;border-radius:14px;border:0;font:inherit;font-weight:700;font-size:16px;cursor:pointer;text-decoration:none;transition:transform .15s,box-shadow .15s}
+  .btn-p{color:#04121f;background:linear-gradient(90deg,var(--a),var(--b));box-shadow:0 10px 30px rgba(34,211,238,.28)}
+  .btn-p:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(34,211,238,.38)}
+  .btn-g{margin-top:10px;color:var(--text);background:transparent;border:1px solid var(--border);font-size:14px;font-weight:600;padding:12px}
+  .btn-g:hover{background:rgba(120,160,230,.1)}
+  .btn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .opt{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:18px;color:var(--muted);font-size:13px;cursor:pointer;user-select:none}
+  .opt input{accent-color:var(--a);width:16px;height:16px}
+  .hint{margin-top:22px;padding-top:18px;border-top:1px solid var(--border);color:var(--muted);font-size:12.5px;line-height:1.6;text-align:left}
+  .hint b{color:var(--text)}
+  .foot{margin-top:16px;font-size:11.5px;color:#5f739a}
+  .status{min-height:18px;margin-top:12px;font-size:13px;color:var(--a)}
+</style>
+</head>
+<body>
+<div class="grid"></div>
+<main class="card">
+  <svg class="logo" viewBox="0 0 48 48" role="img" aria-label="Logo HSE">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22D3EE"/><stop offset="1" stop-color="#3B82F6"/></linearGradient></defs>
+    <path d="M24 3.500 40.500 9.500v12.200c0 10.200-6.600 18.300-16.500 22.800C14.100 40 7.500 31.900 7.500 21.700V9.500z" fill="url(#g)"/>
+    <path d="M24 3.500 40.500 9.500v12.200c0 10.200-6.600 18.300-16.500 22.800z" fill="#000" opacity=".14"/>
+    <path d="M13.500 24.500a10.500 10.500 0 0 1 21 0z" fill="#fff"/>
+    <rect x="11.500" y="24.500" width="25" height="3.200" rx="1.600" fill="#fff"/>
+    <rect x="21.500" y="12.500" width="5" height="12" rx="1.500" fill="#0B1F3A" opacity=".85"/>
+    <path d="M24 30.200v7M20.500 33.700h7" stroke="#fff" stroke-width="2.600" stroke-linecap="round" fill="none"/>
+  </svg>
+  <h1>HSE COMMAND CENTER</h1>
+  <p class="sub">Safety, Health &amp; Operational Control System<br>Login dengan username dan password Anda.</p>
+
+  <a class="btn btn-p" id="open" href="#" rel="noopener">
+    <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg> Buka Aplikasi
+  </a>
+  <a class="btn btn-g" id="open-new" href="#" target="_blank" rel="noopener">Buka di tab baru</a>
+  <div class="status" id="status" role="status"></div>
+
+  <label class="opt"><input type="checkbox" id="auto"> Langsung buka aplikasi saat halaman ini dikunjungi</label>
+
+  <div class="hint">
+    <b>Pasang di layar utama HP:</b><br>
+    Android (Chrome): menu ⋮ → <i>Tambahkan ke layar utama</i>.<br>
+    iPhone (Safari): tombol Bagikan → <i>Tambah ke Layar Utama</i>.<br>
+    Ikon perisai HSE akan muncul seperti aplikasi biasa.
+  </div>
+  <div class="foot">Data tersimpan di Google Sheets &amp; Google Drive perusahaan.</div>
+</main>
+
+<script>
+(function () {
+  // Ganti di sini bila URL Web App berubah (setelah Deploy → New deployment).
+  var APP_URL = 'https://script.google.com/macros/s/AKfycbxGotMhn0q-WqVZQT33G41I5aoFg2tsWER28piapY5QGVLEW980HlOXZDSY-gXHeyil/exec';
+  var KEY = 'hse_auto_open';
+  function get() { try { return localStorage.getItem(KEY) === '1'; } catch (e) { return false; } }
+  function set(v) { try { localStorage.setItem(KEY, v ? '1' : '0'); } catch (e) { /* abaikan */ } }
+  var target = APP_URL;
+  var open = document.getElementById('open'), openNew = document.getElementById('open-new'),
+      auto = document.getElementById('auto'), st = document.getElementById('status');
+  open.href = target; openNew.href = target;
+  auto.checked = get();
+  auto.addEventListener('change', function () { set(auto.checked); });
+
+  var params = new URLSearchParams(location.search);
+  var standalone = (window.matchMedia && matchMedia('(display-mode: standalone)').matches) || window.navigator.standalone === true;
+  var stay = params.has('stay');                                 // ?stay=1 -> jangan auto buka (untuk mengubah pilihan)
+  if (!stay && (get() || standalone)) {
+    st.textContent = 'Membuka aplikasi… (tambahkan ?stay=1 di URL untuk menahan halaman ini)';
+    setTimeout(function () { location.replace(target); }, 600);
+  }
+})();
+</script>
+</body>
+</html>
